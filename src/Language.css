@@ -1,0 +1,38 @@
+.language > img {
+  margin: 0 1vw;
+  width: 180px;
+  height: 100px;
+}
+
+.language:hover {
+  cursor: pointer;
+  transition: 0.5s transform;
+  transform: scale(1.2);
+  transform: translateY(-1vh);
+}
+
+.language > p {
+  text-align: center;
+  font-weight: 800;
+  color: #7f8fa6;
+}
+
+@media screen and (max-width: 680px) {
+  .language > img {
+    width: 140px;
+    height: 80px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .language {
+    margin: 10px 0;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .language > img {
+    width: 120px;
+    height: 60px;
+  }
+}

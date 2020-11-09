@@ -1,0 +1,131 @@
+body {
+  background-color: #f5f6fa;
+}
+
+.body__logo {
+  display: none;
+}
+
+.logo,
+.body__logo {
+  opacity: 0.9;
+  margin-top: 1.5vh;
+  margin-left: 1.5vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 188px;
+  min-width: 188px;
+  background-color: #192a56;
+  border-radius: 10px 0 0 0;
+  z-index: 199;
+  align-self: flex-start;
+  pointer-events: none;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+}
+
+.logo:hover,
+.body__logo {
+  transition: 0.4s opacity;
+  opacity: 1;
+}
+
+.logo > .MuiSvgIcon-root,
+.body__logo > .MuiSvgIcon-root {
+  color: #f5f6fa;
+  font-size: 44px;
+}
+
+.logo > p,
+.body__logo > p {
+  text-align: right;
+  margin-right: 2px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  font-size: 18px;
+  font-weight: 800;
+  color: #f5f6fa;
+}
+
+@media screen and (max-width: 762px) {
+  body {
+    background-color: #c23616;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .logo,
+  .body__logo {
+    width: 182px;
+    min-width: 182px;
+  }
+  .logo > .MuiSvgIcon-root,
+  .body__logo > .MuiSvgIcon-root {
+    font-size: 42px;
+  }
+  .logo > p,
+  .body__logo > p {
+    font-size: 16px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .logo,
+  .body__logo {
+    width: 178px;
+    min-width: 178px;
+  }
+  .logo > .MuiSvgIcon-root,
+  .body__logo > .MuiSvgIcon-root {
+    font-size: 40px;
+  }
+  .logo > p,
+  .body__logo > p {
+    font-size: 15px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .logo,
+  .body__logo {
+    width: 174px;
+    min-width: 174px;
+  }
+  .logo > .MuiSvgIcon-root,
+  .body__logo > .MuiSvgIcon-root {
+    font-size: 30px;
+  }
+  .logo > p,
+  .body__logo > p {
+    font-size: 14px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .logo,
+  .body__logo {
+    width: 170px;
+    min-width: 170px;
+  }
+  .logo > .MuiSvgIcon-root,
+  .body__logo > .MuiSvgIcon-root {
+    font-size: 28px;
+  }
+  .logo > p,
+  .body__logo > p {
+    font-size: 13px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}

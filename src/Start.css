@@ -1,0 +1,131 @@
+.start {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  position: relative;
+  background-color: #353b48;
+  box-sizing: border-box;
+}
+
+.start__describtion {
+  background-color: #c23616;
+  color: white;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  margin-top: 20px;
+  display: none;
+}
+
+.start > h2 {
+  margin-top: 20vh;
+  color: #dcdde1;
+}
+
+.start__languages {
+  margin-top: 7vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.start__language > img {
+  margin: 0 1vw;
+  width: 180px;
+  height: 100px;
+}
+
+.start__language:hover {
+  cursor: pointer;
+  transition: 0.5s transform;
+  transform: scale(1.2);
+  transform: translateY(-1vh);
+}
+
+.start__language > p {
+  text-align: center;
+  font-weight: 800;
+  color: #7f8fa6;
+}
+
+.start__info {
+  margin-top: 150px;
+  margin-left: 20px;
+  width: 96%;
+  font-size: 19px;
+  font-weight: 600;
+  align-self: flex-start;
+  overflow: hidden;
+}
+
+.start__infoWarning {
+  color: #c23616;
+}
+
+@media screen and (max-width: 680px) {
+  .start__info {
+    font-size: 16px;
+  }
+  .start > h2 {
+    font-size: 23px;
+  }
+}
+@media screen and (max-width: 490px) {
+  .start__info {
+    margin-left: 15px;
+    font-size: 14px;
+  }
+  .start > h2 {
+    font-size: 21px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .start > h2 {
+    margin-top: 20px;
+  }
+
+  .start__languages {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .start__info {
+    margin: 40px 0 0 10px;
+    font-size: 13px;
+  }
+  .start > h2 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 448px) {
+  .start__describtion {
+    display: block;
+  }
+  .start__info {
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    left: 0;
+    font-size: 12px;
+    margin: 0;
+    padding: 3%;
+    width: unset;
+    height: 50vh;
+    opacity: 0;
+    transition: all 0.3s;
+    background-color: #353b48;
+  }
+  .start__info.active {
+    opacity: 1;
+    z-index: 100;
+  }
+  .start > h2 {
+    font-size: 19px;
+  }
+}
