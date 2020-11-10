@@ -47,4 +47,4 @@ export const paths = [
   "entertainment",
 ];
 
-export const apiKey = "46f7e7ad46694960a8559d7bd2589e48";
+export const apiKey = "your api key";
